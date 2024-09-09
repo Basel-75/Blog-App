@@ -52,10 +52,10 @@ The purpose of this app is to Allow user to discover and post manage blogs with 
 ### Running the App
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/Basel-75/Project-5.git
+   git clone https://github.com/Basel-75/Blog-App.git
 2. Navigate to the project directory: 
    ```bash
-   cd Project-5
+   cd Blog-App
 
 3. Install dependencies: 
    ```bash
