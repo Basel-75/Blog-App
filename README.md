@@ -1,52 +1,97 @@
-# Project Description: Blog App
+# Blog App 📰
 
-#### Overview
-In this project, you will create a fully functional Blog App where users can log in, create, update, delete, and view blogs. The app should follow clean code principles and utilize GetIt for dependency injection and GetStorage for managing the login process. You will store all blog data locally, ensuring a well-structured database to manage the content effectively.
+## Overview
 
-#### Features and Requirements
+### Purpose
+The purpose of this app is to Allow user to discover and post manage blogs with more features.
 
-1. **User Authentication**:
-   - Implement a login system using GetStorage. 
-   - If the user is already logged in, they should be redirected to the Home page; otherwise, they should be prompted to log in.
+### Features
+- Add Blogs: Users can create and post new Blogs.
 
-2. **Blog Management**:
-   - **Add Blog**: Allow logged-in users to create new blog posts. Each blog should include the following content:
-     - **Category**: The category of the blog post.
-     - **Author Name**: The name of the author.
-     - **Title**: The title of the blog post.
-     - **Summary**: A brief summary of the blog.
-     - **Content**: The full content of the blog.
-     - **Date**: The date the blog was posted.
-     - **Minutes to Read**: The estimated time required to read the blog.
-     - **Post Image**: An image associated with the blog, selected via an image picker.
+- Remove Blogs: Users can remove their Blogs.
 
-   - **Update/Delete Blog**: Allow users to update or delete their existing blog posts.
+- Mark Blogs: Users can Mark Blogs.
 
-3. **Data Storage**:
-   - Store all blogs using a local storage solution (e.g., GetStorage).
-   - Ensure a well-structured database to handle blog data efficiently.
+- Edit Blogs: Users can Edit their Blogs.
 
-4. **Blog Retrieval**:
-   - Implement functionality to retrieve and display all blogs from local storage.
+- Save User Status : If the user is already logged in, they will be redirected to the Home; otherwise, they will be prompted to log in.
 
-5. **Saved Blogs**:
-   - Allow users to save their favorite blogs for easy access later.
+- Local Storage: The app store and update the Blogs localy .
 
-6. **Search Functionality**:
-   - Implement a search feature that enables users to search for blogs based on keywords (extra functionality, not required).
+## Widgets & External Packages
 
-7. **Figma Design**:
-   - [Figm Design Link](https://www.figma.com/design/08HSoZqTxjTsHhHNR06qgd/News-Feed-App-%E2%80%93-UI-Design-(Community)?node-id=1-2&t=GV2ndX0cQAo4YDuf-1)
+### Main Widgets
+- **TextField**: The `TextField` widget is used to allow users to input text.
 
-#### Technical Requirements
-- **Clean Code**: Ensure that your code follows best practices in terms of readability, maintainability, and organization.
-- **GetIt**: Use GetIt for dependency injection to manage your app's dependencies efficiently.
-- **GetStorage**: Implement GetStorage for storing user login data and blog posts.
+- **SnackBar**: The `SnackBar` is used to show error message to the users.
 
-#### Extra Points
-- Implement additional UI elements like bottom sheets, TabBarView, TabBar, and PageView.
-- Enhance the app with smooth navigation and animations to improve user experience.
+- **BottomNavigationBar**: The `BottomNavigationBar` is used to navigate between different sections of the app, such as the Feed, Saved Blogs, and profile.
 
-### Submission
-- **Deadline**: The project must be submitted before September 1, 9:59 AM.
-- Ensure that your project is well-documented, with a README file explaining the features, setup instructions, and any additional notes on the implementation. Show your creativity in both the design and functionality of your Blog App!
+- **BottomSheet**: The `BottomSheet` widget is used to present a sliding panel from the bottom of the screen.
+
+### External Packages
+- **get_it**: Is a simple Service Locator for Dart and Flutter projects.
+
+- **get_storage**: A fast, extra light and synchronous key-value in memory, which backs up data to disk at each operation. It is written entirely in Dart and easily integrates with Get framework of Flutter.
+
+- **Icons Plus**: Is a package for Flutter developers that provides a collection of attractive icons from different packs.
+
+- **intl**: For convert Blog Date Format to `('MMM dd, yyyy')`.
+
+- **Image Picker**: A Flutter plugin for iOS and Android for picking images from the image library, and taking new pictures with the camera.
+
+- **carousel_custom_slider**: Is a simple slider package, that can put the position of the indicator and text on it and personalize it.
+
+- **Buttons TabBar**:  Is an open-source Flutter package that provides a tabbar where each tab indicator is a toggle button.
+
+## Instructions for Running the App
+
+### Prerequisites
+- Flutter SDK
+
+### Running the App
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/Basel-75/Project-5.git
+2. Navigate to the project directory: 
+   ```bash
+   cd Project-5
+
+3. Install dependencies: 
+   ```bash
+   flutter pub get
+
+4. Run the app on an emulator or connected device: 
+   ```bash
+   flutter run
+
+
+## Output
+
+### Screenshot
+
+![alt text](assest/readme/login.png)
+![alt text](assest/readme/image-1.png)
+![alt text](assest/readme/image-2.png)
+![alt text](assest/readme/image-3.png)
+![alt text](assest/readme/profile.png)
+![alt text](assest/readme/gust.png)
+![alt text](assest/readme/image.png)
+
+### Demo GIF
+
+#### Slider
+
+![assest/readme/blogGif.gif](assest/readme/sliderGif.gif)
+
+#### Full Demo
+
+![assest/readme/blogGif.gif](assest/readme/blogGif.gif)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For more information, feel free to contact me via basel_1422@outlook.com or visit my GitHub profile @Basel-75.
